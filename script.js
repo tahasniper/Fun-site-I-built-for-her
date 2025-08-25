@@ -135,7 +135,7 @@ for (let i = 0; i < 5; i++) {
 
 const handleYesClick = () => {
   crushName.style.display = "none";
-  question.innerHTML = "Yeppies! See you tomorrow!!";
+  question.innerHTML = "Yeppies! See you soon!!";
   
   // Hide the original gif
   gif.style.display = "none";
@@ -252,4 +252,5 @@ function rerollDateIdea() {
     setTimeout(createFloatingShape, i * 100);
   }
 }
+
 
