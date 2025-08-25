@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you go out with me? 🥹</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </head>
+  <body>
+    <div class="floating-shapes" id="floating-shapes"></div>
+    <div class="wrapper">
+      <h2 class="question">Will you go out with me?</h2>
+      <div class="gif-container">
+        <img
+          class="gif"
+          id="main-gif"
+          alt="gif"
+          src="1.gif"
+        />
+      </div>
+      <div class="btn-group">
+        <button class="yes-btn">Yes</button>
+        <button class="no-btn">No</button>
+      </div>
+    </div>
+    
+    <!-- Custom Alert Modal -->
+    <div class="custom-alert" id="customAlert">
+      <div class="alert-content">
+        <div class="alert-title">Date Ideas! 💕</div>
+        <div class="alert-message" id="alertMessage"></div>
+        <div class="alert-buttons">
+          <button class="alert-reroll" onclick="rerollDateIdea()">ReRoll! 🎲</button>
+          <button class="alert-close" onclick="closeCustomAlert()">Let's Go! 😊</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>
