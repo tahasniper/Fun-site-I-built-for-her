@@ -1,5 +1,6 @@
 const qs = (selector) => document.querySelector(selector);
 const question = qs(".question");
+const crushName = qs(".name")
 const gif = qs("#main-gif");
 const gifContainer = qs(".gif-container");
 const [yesBtn, noBtn] = [".yes-btn", ".no-btn"].map(qs);
@@ -133,6 +134,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 const handleYesClick = () => {
+  crushName.style.display = "none";
   question.innerHTML = "Yeppies! See you tomorrow!!";
   
   // Hide the original gif
@@ -250,3 +252,4 @@ function rerollDateIdea() {
     setTimeout(createFloatingShape, i * 100);
   }
 }
+
